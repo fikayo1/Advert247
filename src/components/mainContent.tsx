@@ -18,7 +18,7 @@ const MainContent = () => {
             <div className="p-10">
                 <div className="text-center mx-auto max-w-3xl space-y-5 mt-10">
                     <h1 className="font-extrabold text-[#0022ee] text-4xl">
-                        Nigeria's First In-Ride Advertising Network
+                        Nigeria&#39;s First In-Ride Advertising Network
                     </h1>
                     <p>
                         Adverts247 In-Ride Advertising equips Bolt, Uber, InDrive, and all Ride

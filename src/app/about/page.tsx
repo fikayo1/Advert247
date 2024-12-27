@@ -7,7 +7,12 @@ import { Lightbulb, Eye, Settings, ChevronDown } from 'lucide-react';
 
 import { motion } from 'framer-motion';
 
-const Counter = ({ end, label }) => {
+interface CounterProps {
+  end: number; // Specify the type for 'end'
+  label: string; // Specify the type for 'label'
+}
+
+const Counter: React.FC<CounterProps> = ({ end, label }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -42,7 +47,7 @@ const Counter = ({ end, label }) => {
 
 const AboutUs = () => {
 
-  const [openQuestion, setOpenQuestion] = useState(null);
+  const [openQuestion, setOpenQuestion] = useState<number | null>(null); 
   
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
