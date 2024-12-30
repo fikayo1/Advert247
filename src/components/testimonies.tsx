@@ -66,7 +66,7 @@ const Testimonies = () => {
                                     <div className="text-xs text-gray-500 mt-1">{item.duration}</div> {/* Added the duration */}
                                 </div>
                             </div>
-                            <p className="text-sm mt-4 text-gray-600 italic">"{item.text}"</p>
+                            <p className="text-sm mt-4 text-gray-600 italic">{item.text}</p>
                         </div>
                     ))}
                 </div>
