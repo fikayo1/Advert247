@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
