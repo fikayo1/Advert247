@@ -95,7 +95,10 @@ const AboutUs = () => {
   ];
 
   return (
+    <>
+   
     <div className="max-w-7xl mx-auto px-16 py-16 ">
+       
       <div className="grid md:grid-cols-2 gap-8 items-start">
         {/* Header Section */}
         <motion.div
@@ -109,8 +112,8 @@ const AboutUs = () => {
             We are building the infrastructure for the passenger economy.
           </h1>
           <p className="text-gray-600">
-            Adverts247 is a mobility media company founded with the idea of building 
-            passenger experiences that enhance trips and earn more money.
+          ADVERTS247 is an Adtech company on a mission to disrupt the advertising industry in Africa. Our in-Ride advertising network combines the immersiveness of DOOH Advertising and the data driven nature of internet advertising.
+          We provide a platform, business can leverage to engage their potentials customers one-on-one in an immmersive experience that is delivered via our streaming tablet stationed in Ride-hailing vehicles across Nigeria.
           </p>
         </motion.div>
 
@@ -151,11 +154,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">VISION</h3>
             <p className="text-gray-600">
-              Our vision is to be the most cutting-edge advertising platform in the world for
-              all brands and services when it comes to matching advertising budgets with
-              actual conversions, customer satisfaction, requirements, and brand
-              aspirations, supplying professional services that are dependable, effective,
-              high-caliber, and uphold unwavering standards and ethics.
+            Our vision is to be the most cutting edge, advertising platform in the world for all brands and services when it comes to matching advertising budgets with actual conversion customer satisfaction, requirement and brand aspiration. supplying professional services that are dependable, effective. high calibre, and uphold unwavering standards and ethics.
             </p>
           </motion.div>
 
@@ -173,12 +172,7 @@ const AboutUs = () => {
             </div>
             <h3 className="text-xl font-semibold mb-2">MISSION</h3>
             <p className="text-gray-600">
-              Our mission is to improve advertising and customer connection with
-              products and services using our innovative entertainment and advertising
-              technologies. We take pleasure in having experts who are qualified and value
-              teamwork since it helps advertising reach its intended audience as
-              effectively as possible because the many different strengths of many people
-              are stronger than one.
+              Our mission is to improve advertising and customer connection with products and services using our innovative entertainment and advertising technologies. We take pleasure in having experts who are qualified and value teamwork since it helps advertising reach its intended audience as effectively as possible because the many different strengths of many people are stronger than one
             </p>
           </motion.div>
         </motion.div>
@@ -238,6 +232,7 @@ const AboutUs = () => {
       </motion.div>
 
     </div>
+    </>
   );
 };
 

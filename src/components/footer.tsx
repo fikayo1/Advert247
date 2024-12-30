@@ -7,16 +7,14 @@ const Footer = () => {
           title: "Our company",
           links: [
             { label: "About us", href: "/about" },
-            { label: "New drivers", href: "/new-drivers" },
-            { label: "Current drivers", href: "/current-drivers" },
+            { label: "New drivers", href: "/signup" },
+            { label: "Current drivers", href: "/drivers" },
             { label: "Contact us", href: "/contact" },
           ]
         },
         resources: {
           title: "Resources",
           links: [
-            { label: "Current Drivers (Login)", href: "/login" },
-            { label: "New Drivers(Apply)", href: "/apply" },
             { label: "Bills", href: "/bills" },
             { label: "Driver Agreement", href: "/agreement" },
           ]
@@ -24,20 +22,18 @@ const Footer = () => {
         legal: {
           title: "Legal",
           links: [
-            { label: "Privacy Notice", href: "/privacy" },
-            { label: "Privacy Center", href: "/privacy-center" },
+            { label: "Privacy Policy", href: "/policy" },
             { label: "Consumer - Health Data Privacy Policy", href: "/health-privacy" },
-            { label: "Website Terms of use", href: "/terms" },
             { label: "Terms of Service", href: "/tos" },
           ]
         },
         partner: {
           title: "Partner",
           links: [
-            { label: "Airtel", href: "/partners/airtel" },
-            { label: "Pepsi", href: "/partners/pepsi" },
-            { label: "Coca-cola", href: "/partners/coca-cola" },
-            { label: "Nivea", href: "/partners/nivea" },
+            { label: "Airtel", href: "#" },
+            { label: "Pepsi", href: "#" },
+            { label: "Coca-cola", href: "#" },
+            { label: "Nivea", href: "#" },
           ]
         }
       };

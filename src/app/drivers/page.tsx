@@ -49,7 +49,7 @@ const DownloadPage = () => {
            <div className="flex items-center justify-center">
              <div className="p-4 bg-white rounded-lg shadow">
                <Image
-                 src="/qr-code.png"
+                 src="/images/qrcode.png"
                  alt="Download App QR Code"
                  width={200}
                  height={200}
