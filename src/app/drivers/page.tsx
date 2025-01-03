@@ -32,15 +32,12 @@ const DownloadPage = () => {
                <h2 className="text-xl font-semibold">Support Contact</h2>
                <div>
                  <p className="font-medium">Customer Care:</p>
-                 <a href="tel:+2348000000000" className="text-blue-600">+234 800 000 0000</a>
+                 <a href="tel:+234 916 834 0000" className="text-blue-600">+234 916 834 0000</a>
                </div>
-               <div>
-                 <p className="font-medium">Technical Support:</p>
-                 <a href="tel:+2348000000000" className="text-blue-600">+234 800 000 0000</a>
-               </div>
+             
                <div>
                  <p className="font-medium">Email:</p>
-                 <a href="mailto:support@example.com" className="text-blue-600">support@example.com</a>
+                 <a href="mailto:info@adverts247.com" className="text-blue-600">info@adverts247.com</a>
                </div>
              </div>
            </div>
@@ -49,12 +46,12 @@ const DownloadPage = () => {
            <div className="flex items-center justify-center">
              <div className="p-4 bg-white rounded-lg shadow">
                <Image
-                 src="/images/qrcode.png"
+                 src="/images/qr-code.png"
                  alt="Download App QR Code"
                  width={200}
                  height={200}
                />
-               <p className="text-center mt-2 text-sm text-gray-600">Scan to download</p>
+               <p className="text-center mt-2 text-sm font-bold">Scan to download</p>
              </div>
            </div>
          </div>

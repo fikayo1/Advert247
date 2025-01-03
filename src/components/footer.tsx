@@ -15,7 +15,6 @@ const Footer = () => {
         resources: {
           title: "Resources",
           links: [
-            { label: "Bills", href: "/bills" },
             { label: "Driver Agreement", href: "/agreement" },
           ]
         },
@@ -23,7 +22,6 @@ const Footer = () => {
           title: "Legal",
           links: [
             { label: "Privacy Policy", href: "/policy" },
-            { label: "Consumer - Health Data Privacy Policy", href: "/health-privacy" },
             { label: "Terms of Service", href: "/tos" },
           ]
         },

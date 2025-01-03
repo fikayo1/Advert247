@@ -125,7 +125,82 @@ const MainContent = () => {
                     </div>
                 </div>
 
-            <Testimonies />
+                <div className="mt-20 flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
+                    <div className="w-full sm:w-[calc(50%-1rem)] bg-white py-4 px-2">
+                        <h3 className="text-2xl font-semibold mb-2 text-[#0022ee]">Guaranteed impressions</h3>
+                        <p className="text-lg mt-4">
+                            ADVERTS247 only counts impressions when the entire video was shown to a real passenger on an active trip.
+                        </p>
+                    </div>
+
+                    <div className="w-full sm:w-[calc(50%-1rem)] bg-white py-4 px-2">
+                        <h3 className="text-2xl font-semibold mb-2 text-[#0022ee]">Full Analytics</h3>
+                        <p className="text-lg mt-4">
+                            Receive full analytics for your campaign including impressions and others based on your objectives.
+                        </p>
+                    </div>
+
+                    <div className="w-full sm:w-[calc(50%-1rem)] bg-white py-4 px-2">
+                        <h3 className="text-2xl font-semibold mb-2 text-[#0022ee]">Robust Targeting</h3>
+                        <p className="text-lg mt-4">
+                            ADVERTS247 targeting is the basis for our AI targeting engine shows your ad to the best possible audience.
+                        </p>
+                    </div>
+
+                    <div className="w-full sm:w-[calc(50%-1rem)] bg-white py-4 px-2">
+                        <h3 className="text-2xl font-semibold mb-2 text-[#0022ee]">QR Code Ready</h3>
+                        <p className="text-lg mt-4">
+                            Want to further engage with passengers? You can build in call-to-action points on our platform, including QR Codes,
+                            to build deeper engagement with your content.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="mt-20 relative">
+                    <h2 className="font-extrabold text-center text-[#0022ee] text-3xl mb-10">
+                        Value Proposition For Brands
+                    </h2>
+
+                    <div className="grid grid-cols-2">
+                        {/* Left Column */}
+                        <Image
+                            src="/images/3000-drivers.png"
+                            alt=""
+                            width={350}
+                            height={40}
+                            className="justify-self-end"
+                        />
+                        {/* Right Column */}
+                        <Image
+                            src="/images/deep-understanding.png"
+                            alt=""
+                            width={350}
+                            height={40}
+                            className="justify-self-start"
+                        />
+                        {/* Left Column */}
+                        <Image
+                            src="/images/completed.png"
+                            alt=""
+                            width={450}
+                            height={40}
+                            className="justify-self-end"
+                        />
+                        {/* Right Column */}
+                        <Image
+                            src="/images/876M.png"
+                            alt=""
+                            width={350}
+                            height={40}
+                            className="justify-self-start"
+                        />
+                    </div>
+                </div>
+
+
+
+
+                <Testimonies />
 
             </div>
         </>

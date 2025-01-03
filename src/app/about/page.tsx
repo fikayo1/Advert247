@@ -8,8 +8,8 @@ import { Lightbulb, Eye, Settings, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface CounterProps {
-  end: number; // Specify the type for 'end'
-  label: string; // Specify the type for 'label'
+  end: number; 
+  label: string; 
 }
 
 const Counter: React.FC<CounterProps> = ({ end, label }) => {
@@ -38,7 +38,7 @@ const Counter: React.FC<CounterProps> = ({ end, label }) => {
     <div className="text-center">
       <div className="text-4xl font-bold mb-2">
         {count}
-        {end === 3000 ? 'K+' : end === 2000 ? 'K' : 'm'}
+        {end === 300 ? 'K+' : end === 200 ? 'K' : 'm'}
       </div>
       <div className="text-gray-600">{label}</div>
     </div>
@@ -115,6 +115,8 @@ const AboutUs = () => {
           ADVERTS247 is an Adtech company on a mission to disrupt the advertising industry in Africa. Our in-Ride advertising network combines the immersiveness of DOOH Advertising and the data driven nature of internet advertising.
           We provide a platform, business can leverage to engage their potentials customers one-on-one in an immmersive experience that is delivered via our streaming tablet stationed in Ride-hailing vehicles across Nigeria.
           </p>
+
+          <img src="/images/office.png" alt="advert247 office" className='pt-8' />
         </motion.div>
 
         {/* Cards Section */}
@@ -186,50 +188,11 @@ const AboutUs = () => {
         className="grid md:grid-cols-3 gap-8 mt-16"
         id="faq"
       >
-        <Counter end={3000} label="Active Users" />
-        <Counter end={2000} label="Daily Impressions" />
+        <Counter end={300} label="Active Users" />
+        <Counter end={200} label="Daily Impressions" />
         <Counter end={1} label="Million Monthly Views" />
       </motion.div>
 
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1 }}
-        className="mt-16"
-        
-      >
-        <h2 className="text-4xl font-bold mb-6">FAQ</h2>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="">
-              <button
-                className="w-full p-4 flex justify-between items-center text-left"
-                onClick={() => setOpenQuestion(openQuestion === index ? null : index)}
-              >
-                <span className="font-semibold">{faq.question}</span>
-                <motion.div
-                  animate={{ rotate: openQuestion === index ? 180 : 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <ChevronDown />
-                </motion.div>
-              </button>
-              <motion.div
-                initial={false}
-                animate={{
-                  height: openQuestion === index ? "auto" : 0,
-                  opacity: openQuestion === index ? 1 : 0
-                }}
-                transition={{ duration: 0.2 }}
-                className="overflow-hidden"
-              >
-                <p className="p-4 pt-0">{faq.answer}</p>
-              </motion.div>
-              <hr className="border-gray-300 my-4" />
-            </div>
-          ))}
-        </div>
-      </motion.div>
 
     </div>
     </>

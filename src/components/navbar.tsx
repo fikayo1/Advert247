@@ -41,7 +41,10 @@ const Navbar = () => {
             <Link href="/drivers" className="hover:text-gray-300">
               Current Drivers 
             </Link>
-            <Link href="/about#faq" className="hover:text-gray-300">
+            <Link href="/contact-us" className="hover:text-gray-300">
+              Contact Us
+            </Link>
+            <Link href="/faq" className="hover:text-gray-300">
               FAQ
             </Link>
           </div>
