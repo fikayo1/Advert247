@@ -104,8 +104,13 @@ const Navbar = () => {
           >
             <span>Current Drivers</span>
           </Link>
+          <Link href="/contact-us"  
+              className="hover:text-gray-300 flex items-center justify-between"  
+              onClick={() => setIsOpen(false)}>
+              Contact Us
+            </Link>
           <Link
-            href="/about#faq"
+            href="/faq"
             className="hover:text-gray-300"
             onClick={() => setIsOpen(false)}
           >
