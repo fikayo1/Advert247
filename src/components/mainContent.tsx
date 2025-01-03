@@ -35,7 +35,7 @@ const MainContent = () => {
                         <img
                             src="/images/tablet-1.png"
                             alt="Adverts Logo"
-                            width={370}
+                            width={300}
                             height={200}
                             className="mx-auto"
                         />
