@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
 import { Phone, Mail, LogIn, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 
@@ -24,7 +23,7 @@ const ContactUs = () => {
                 <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-4">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
                     <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-                        Have questions or need assistance? We're here to help. Reach out to our dedicated support team.
+                        Have questions or need assistance? We are here to help. Reach out to our dedicated support team.
                     </p>
                 </div>
             </div>

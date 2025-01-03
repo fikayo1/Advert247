@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { Lightbulb, Eye, Settings, ChevronDown } from 'lucide-react';
+import { Lightbulb, Eye, Settings } from 'lucide-react';
 
 
 import { motion } from 'framer-motion';
@@ -47,7 +47,7 @@ const Counter: React.FC<CounterProps> = ({ end, label }) => {
 
 const AboutUs = () => {
 
-  const [openQuestion, setOpenQuestion] = useState<number | null>(null); 
+
   
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -83,16 +83,7 @@ const AboutUs = () => {
     }
   };
 
-  const faqs = [
-    {
-      question: "What is the benefit of having a tablet?",
-      answer: "Drivers earn advertising revenue from advertisers, they are able to keep their riders more engaged as they are able to control music, and allow riders to seamlessly tip through the tablet."
-    },
-    {
-      question: "When do I receive my earnings?",
-      answer: "Advertising earnings are available weekly and are automatically added to your earnings reports. Tips are available within 24 hours of riders initiating the tip via the tablet."
-    }
-  ];
+
 
   return (
     <>
