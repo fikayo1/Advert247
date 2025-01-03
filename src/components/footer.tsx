@@ -9,24 +9,18 @@ const Footer = () => {
             { label: "About us", href: "/about" },
             { label: "New drivers", href: "/signup" },
             { label: "Current drivers", href: "/drivers" },
-            { label: "Contact us", href: "/contact" },
+            { label: "Contact us", href: "/contact-us" },
           ]
         },
-        resources: {
-          title: "Resources",
-          links: [
-            { label: "Driver Agreement", href: "/agreement" },
-          ]
-        },
+       
         legal: {
           title: "Legal",
           links: [
             { label: "Privacy Policy", href: "/policy" },
-            { label: "Terms of Service", href: "/tos" },
           ]
         },
         partner: {
-          title: "Partner",
+          title: "Partners",
           links: [
             { label: "Airtel", href: "#" },
             { label: "Pepsi", href: "#" },

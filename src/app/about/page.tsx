@@ -38,7 +38,7 @@ const Counter: React.FC<CounterProps> = ({ end, label }) => {
     <div className="text-center">
       <div className="text-4xl font-bold mb-2">
         {count}
-        {end === 300 ? 'K+' : end === 200 ? 'K' : 'm'}
+        {end === 3 ? 'K+' : end === 200 ? 'K' : 'm'}
       </div>
       <div className="text-gray-600">{label}</div>
     </div>
@@ -179,7 +179,7 @@ const AboutUs = () => {
         className="grid md:grid-cols-3 gap-8 mt-16"
         id="faq"
       >
-        <Counter end={300} label="Active Users" />
+        <Counter end={3} label="Active Users" />
         <Counter end={200} label="Daily Impressions" />
         <Counter end={1} label="Million Monthly Views" />
       </motion.div>

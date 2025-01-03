@@ -77,7 +77,7 @@ const ContactUs = () => {
                         <h2 className="text-[#0022ee] font-bold text-2xl text-center p-6">For Advertisers</h2>
                         <div className="px-8 py-2">
                             <p className="text-gray-600 mb-8 text-center leading-relaxed">
-                                If you are interested in rideshare advertising opportunities, please contact our ad team below.
+                                If you are interested in in-ride advertising opportunities, please contact our ad team below.
                             </p>
 
                             <div className="space-y-6 mb-8">
@@ -86,7 +86,7 @@ const ContactUs = () => {
                                     <div className="text-left">
                                         <p className="text-sm text-gray-500">Business Support:</p>
                                         <a href="tel:+2348000000000" className="text-[#0022ee] font-medium hover:underline">
-                                            +234 916 834 0000
+                                            +234 916 831 0000
                                         </a>
                                     </div>
                                 </div>

@@ -157,45 +157,46 @@ const MainContent = () => {
                 </div>
 
                 <div className="mt-20 relative">
-                    <h2 className="font-extrabold text-center text-[#0022ee] text-3xl mb-10">
-                        Value Proposition For Brands
-                    </h2>
+    <h2 className="font-extrabold text-center text-[#0022ee] text-3xl mb-10">
+        Value Proposition For Brands
+    </h2>
 
-                    <div className="grid grid-cols-2">
-                        {/* Left Column */}
-                        <Image
-                            src="/images/3000-drivers.png"
-                            alt=""
-                            width={350}
-                            height={40}
-                            className="justify-self-end"
-                        />
-                        {/* Right Column */}
-                        <Image
-                            src="/images/deep-understanding.png"
-                            alt=""
-                            width={350}
-                            height={40}
-                            className="justify-self-start"
-                        />
-                        {/* Left Column */}
-                        <Image
-                            src="/images/completed.png"
-                            alt=""
-                            width={450}
-                            height={40}
-                            className="justify-self-end"
-                        />
-                        {/* Right Column */}
-                        <Image
-                            src="/images/876M.png"
-                            alt=""
-                            width={350}
-                            height={40}
-                            className="justify-self-start"
-                        />
-                    </div>
-                </div>
+    <div className="flex flex-wrap justify-center gap-4">
+        {/* Image 1 */}
+        <Image
+            src="/images/3000-drivers.png"
+            alt=""
+            width={270}
+            height={40}
+            className="flex-shrink-0"
+        />
+        {/* Image 2 */}
+        <Image
+            src="/images/deep-understanding.png"
+            alt=""
+            width={270}
+            height={40}
+            className="flex-shrink-0"
+        />
+        {/* Image 3 */}
+        <Image
+            src="/images/completed.png"
+            alt=""
+            width={270}
+            height={40}
+            className="flex-shrink-0"
+        />
+        {/* Image 4 */}
+        <Image
+            src="/images/876M.png"
+            alt=""
+            width={270}
+            height={40}
+            className="flex-shrink-0"
+        />
+    </div>
+</div>
+
 
 
 
