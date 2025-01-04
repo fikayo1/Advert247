@@ -2,19 +2,26 @@
 
 import React, { useState } from "react";
 import { Tablet, Battery, Wifi, DollarSign } from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { useRouter } from "next/navigation";
 
 const SignupPage = () => {
+    const router = useRouter();
     const [formData, setFormData] = useState({
         email: "",
         password: "",
         password_confirmation: "",
-        first_name: "",
-        last_name: "",
+        firstname: "",
+        lastname: "",
         date_of_birth: "",
         gender: "",
         address: "",
         phone: "",
     });
+
+    const [isLoading, setIsLoading] = useState(false);
+    const [error, setError] = useState("");
+    const [success, setSuccess] = useState(false);
 
     const benefits = [
         {
@@ -38,10 +45,50 @@ const SignupPage = () => {
             description: "Earn extra through our advertising platform"
         }
     ];
-
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
+        setIsLoading(true);
+        setError("");
+        setSuccess(false);
+
+        try {
+            // Convert gender to integer before sending
+            const apiFormData = {
+                ...formData,
+                gender: formData.gender === "female" ? 0 : 1
+            };
+
+          
+            
+            const response = await fetch('/api/auth/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(apiFormData)
+            });
+
+            const data = await response.json();
+           
+
+            if (!response.ok) {
+                const errorMessage = data.message || data.error || 'Failed to sign up';
+                throw new Error(errorMessage);
+            }
+
+            setSuccess(true);
+            console.log('Signup successful:', data);
+            // Add a slight delay before redirect to show the success message
+            setTimeout(() => {
+                router.push('/drivers');  // Redirect to drivers page
+            }, 1500);
+            
+        } catch (err) {
+            setError(err instanceof Error ? err.message : 'Failed to sign up');
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
@@ -82,14 +129,26 @@ const SignupPage = () => {
             <div className="max-w-4xl mx-auto px-4 py-16">
                 <div className="bg-white rounded-2xl shadow-xl p-8">
                     <h2 className="text-3xl font-bold text-center mb-8">Create Your Account</h2>
+
+                    {error && (
+                        <Alert variant="destructive" className="mb-6">
+                            <AlertDescription>{error}</AlertDescription>
+                        </Alert>
+                    )}
+                    
+                    {success && (
+                        <Alert className="mb-6">
+                            <AlertDescription>Successfully signed up! Redirecting...</AlertDescription>
+                        </Alert>
+                    )}
                     <form onSubmit={handleSubmit} className="space-y-8">
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">First Name</label>
                                 <input
                                     type="text"
-                                    value={formData.first_name}
-                                    onChange={(e) => setFormData({ ...formData, first_name: e.target.value })}
+                                    value={formData.firstname}
+                                    onChange={(e) => setFormData({ ...formData, firstname: e.target.value })}
                                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                     placeholder="Enter your first name"
                                     required
@@ -99,8 +158,8 @@ const SignupPage = () => {
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
                                 <input
                                     type="text"
-                                    value={formData.last_name}
-                                    onChange={(e) => setFormData({ ...formData, last_name: e.target.value })}
+                                    value={formData.lastname}
+                                    onChange={(e) => setFormData({ ...formData, lastname: e.target.value })}
                                     className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                                     placeholder="Enter your last name"
                                     required
@@ -189,9 +248,14 @@ const SignupPage = () => {
 
                         <button
                             type="submit"
-                            className="w-full bg-blue-600 text-white py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors"
+                            disabled={isLoading}
+                            className={`w-full bg-blue-600 text-white py-4 rounded-lg text-lg font-semibold transition-colors ${
+                                isLoading 
+                                    ? 'opacity-75 cursor-not-allowed' 
+                                    : 'hover:bg-blue-700'
+                            }`}
                         >
-                            Join Now & Start Earning
+                            {isLoading ? 'Signing up...' : 'Join Now & Start Earning'}
                         </button>
                     </form>
                 </div>
