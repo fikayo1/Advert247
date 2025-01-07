@@ -34,7 +34,7 @@ const Fleets = () => {
                     <h2 className="text-2xl font-bold mb-4">Leverage the power of video</h2>
                     <p className="text-gray-700">
                         Full-screen video with audio capability plays automatically once the trip is
-                        underway, so it gets riders' full attention.
+                        underway, so it gets riders full attention.
                     </p>
                 </div>
 
