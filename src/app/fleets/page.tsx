@@ -48,7 +48,7 @@ const Fleets = () => {
                 <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100">
                     <h2 className="text-2xl font-bold mb-4">Dedicated Support</h2>
                     <p className="text-gray-700">
-                        Receive ongoing technical support and regular performance reports. Our team ensures your fleet's 
+                        Receive ongoing technical support and regular performance reports. Our team ensures your fleets 
                         advertising system runs smoothly while maximizing revenue potential.
                     </p>
                 </div>
@@ -75,7 +75,7 @@ const Fleets = () => {
 
             {/* CTA Section */}
             <div className="mt-16 text-center">
-                <h2 className="text-2xl font-bold mb-6">Ready to Boost Your Fleet's Revenue?</h2>
+                <h2 className="text-2xl font-bold mb-6">Ready to Boost Your Fleets Revenue?</h2>
                 <Link
                     href="https://fleet.adverts247.com/"
                     className="bg-[#0022ee] text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors font-semibold inline-block"
