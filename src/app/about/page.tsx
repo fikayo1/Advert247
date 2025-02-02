@@ -107,7 +107,7 @@ const AboutUs = () => {
           We provide a platform, business can leverage to engage their potentials customers one-on-one in an immmersive experience that is delivered via our streaming tablet stationed in Ride-hailing vehicles across Nigeria.
           </p>
 
-          <img src="/images/office.png" alt="advert247 office" className='pt-8' />
+          <img src="/images/office.png" alt="adverts247 office" className='pt-8' />
         </motion.div>
 
         {/* Cards Section */}
